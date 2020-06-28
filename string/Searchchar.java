@@ -6,14 +6,14 @@ public static void main(String[] args)
 {
 Scanner sc = new Scanner(System.in);
 System.out.println("enter char");
-String a = sc.next();
+String[] a = sc.next();
 char[] b = a.toCharArray();
 System.out.println(a);
 System.out.println("enter char to search");
 String c = sc.next();
 char d = c.charAt(0);
 
-for (int i=0; i<=sc.length(); i++)
+for (int i=0; i<=a.length(); i++)
 {
 if(b[i] == d)
 {
@@ -29,7 +29,7 @@ a[i]=d;
 break;
 }
 }
-sc=String.valueOf(a);
-System.out.println(sc);
+//sc=String.valueOf(a);
+//System.out.println(sc);
 }
 }
