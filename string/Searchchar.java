@@ -1,3 +1,5 @@
+package string;
+
 import java.util.*;
 
 class Searchchar
@@ -13,7 +15,7 @@ System.out.println("enter char to search");
 String c = sc.next();
 char d = c.charAt(0);
 
-for (int i=0; i<=a.length(); i++)
+for (int i=0; i<=a.length; i++)
 {
 if(b[i] == d)
 {

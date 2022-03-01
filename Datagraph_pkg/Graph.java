@@ -1,9 +1,11 @@
+package Datagraph_pkg;
 import java.util.LinkedList;
 public class Graph
 {
 int vertexcount;
 LinkedList<Integer> adjll[];
 
+@SuppressWarnings("unchecked")
 Graph(int v)
 {
 	this.vertexcount = v;

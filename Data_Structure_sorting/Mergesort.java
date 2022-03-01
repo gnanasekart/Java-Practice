@@ -1,3 +1,4 @@
+package Data_Structure_sorting;
 public class Mergesort
 {
 int[] arr;
@@ -27,9 +28,9 @@ merge(low, middle, high);
 
 void merge(int low, int middle, int high)
 {
-for (int i = low; i<= high; i++)
+for (int a = low; a<= high; a++)
 {
-	temparr[i] = arr[i];
+	temparr[a] = arr[a];
 	int i = low;
 	int j = middle + 1;
 	int k = low;
@@ -41,7 +42,7 @@ for (int i = low; i<= high; i++)
 			i++;
 		}
 		i++;	
-	}
+	
 	else
 	{
 		arr[k] = temparr[j];
@@ -55,7 +56,8 @@ while (i <= middle)
 	k++;
 	i++;										   
 }
-}	
+}
+}
 
 public static void main(String[] args)
 {

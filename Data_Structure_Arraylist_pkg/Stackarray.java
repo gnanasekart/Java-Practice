@@ -1,3 +1,5 @@
+package Data_Structure_Arraylist_pkg;
+
 public class Stackarray
 {
 static final int MAX = 100;

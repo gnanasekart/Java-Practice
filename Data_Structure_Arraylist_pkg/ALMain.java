@@ -1,10 +1,12 @@
+package Data_Structure_Arraylist_pkg;
+import java.util.ArrayList;
 import java.util.List;
 
-public class ALMain()
+public class ALMain
 {
-public Static void main(String[] args)
+public static void main(String[] args)
 {
-	List<Employee> emp = new ArrayList<>();
+	ArrayList<Employee> emp = new ArrayList<>();
 	
 	emp.add(new Employee("gnana", "sekar", 123));
 	emp.add(new Employee("gowri", "shankar", 345));
@@ -15,6 +17,6 @@ public Static void main(String[] args)
 		System.out.println(Employee);
 	}*/
 
-    emp.foreach(employee -> System.out.println(emp));
+    emp.forEach(employee -> System.out.println(emp));
 }
 }

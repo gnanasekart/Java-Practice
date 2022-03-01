@@ -1,3 +1,4 @@
+package Collection_List;
 import java.util.*;
 public class ArrayLists
 {

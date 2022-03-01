@@ -1,3 +1,4 @@
+package Data_Structure_Arraylist_pkg;
 public class Stacklinkedlist {
 	private static Node first = null;
 	static Stacklinkedlist list = new Stacklinkedlist();

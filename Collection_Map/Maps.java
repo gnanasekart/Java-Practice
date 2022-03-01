@@ -1,4 +1,4 @@
-package Collection;
+package Collection_Map;
 import java.util.*;
 
 public class Maps 

@@ -1,4 +1,7 @@
-public class Employee{
+package Data_Structure_Arraylist_pkg;
+
+public class Employee
+{
 private String firstname;
 private String lastname;
 private int id;
@@ -7,7 +10,7 @@ public Employee(String firstname, String lastname, int id)
 {
 	this. firstname = firstname;
 	this.lastname = lastname;
-	thi.id= id;
+	this.id= id;
 }
 public String getFirstName()
 {
@@ -41,4 +44,4 @@ public String toString()
 	", id =" + id + 
 	'}';
 }
-	
+}

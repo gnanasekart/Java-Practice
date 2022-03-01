@@ -1,3 +1,5 @@
+package datatype;
+
 class defaultvalue
 {
 int a ;
