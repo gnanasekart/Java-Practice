@@ -13,22 +13,29 @@ list.add("gowri");
 list.add("shankar");
 list.add("kumar");
 list.add(3, "between");
+
 //find size of the element
 System.out.println(list.size());
+
 //ensuring the capacity
 list.ensureCapacity(12);
 System.out.println(list.size());
+
 //cloning the list
 Object clist = list.clone();
 System.out.println(clist);
+
 //get the value
 System.out.println(list.get(4));
+
 //to check weather array list is empty or not
 System.out.println(list.isEmpty());
-// to check the last index vlaue
+
+// to check the last index value
 System.out.println(list.lastIndexOf(list));
+
 //convert the list to array by using toArray()
-String[] name = list.toArray(new String[list.size()]); // don't forget to use sq.bracket for array size initialise
+String[] name = list.toArray(new String[list.size()]); // don't forget to use sq.bracket for array size initialize
 System.out.println("Array "+Arrays.toString(name)); // Arrays handle the array
 Collections.sort(list);
 System.out.println("after sorting :" +list);
