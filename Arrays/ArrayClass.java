@@ -1,5 +1,6 @@
 package Arrays;
 
+
 import java.util.Arrays;
 
 public class ArrayClass {
@@ -8,6 +9,7 @@ public class ArrayClass {
 	
 	int[] one = {5, 2, 7, 1, 4, 7, 3};
 	int[] two = Arrays.copyOf(one, one.length);
+	 
 	
 	 Arrays.sort(one);
 	 
