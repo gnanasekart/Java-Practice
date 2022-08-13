@@ -12,6 +12,7 @@ public class LinkedHashSets
 			int[] c = {12, 10, 6, 10, 4, 2, 32};
 			//no insert order maintain
 			LinkedHashSet <Integer> lhs = new LinkedHashSet<>();
+			
 			for(int i = 0; i<=c.length-1; i++)
 			{
 				lhs.add(c[i]);
