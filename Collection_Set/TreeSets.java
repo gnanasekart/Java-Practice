@@ -1,6 +1,7 @@
 package Collection_Set;
-//package Collection;
 import java.util.*;
+
+import com.sun.org.apache.xalan.internal.xsltc.compiler.util.CompareGenerator;
 public class TreeSets {
 
 	public static void main(String[] args) {
@@ -10,12 +11,15 @@ public class TreeSets {
 		
 		//String[] name = {"manoj", "kumar", "gnana", "kumar", "a", "v", "f", "r", "d", "f"};
 		
-		ts.add("A");
-		ts.add("B");
 		ts.add("C");
-		ts.add("D");
+		ts.add("A");
 		ts.add("E");
+		ts.add("B");
+		ts.add("D");
 		
+		System.out.println(ts.comparator());
+		
+		/*
 		System.out.println("headset :"+ts.headSet("C", true));
 	
 		System.out.println("headset :"+ts.headSet("C", false));
@@ -24,12 +28,9 @@ public class TreeSets {
 		
 		System.out.println("tail :"+ts.tailSet("B", false));
 		
-		
-		
 //		System.out.println(ts.pollFirst());
 		
-		
-		/*/Using iterator for ascending and descending
+		//Using iterator for ascending and descending
 		Iterator i = ts.iterator();
 		Iterator i = ts.descendingIterator();
 		while(i.hasNext())
