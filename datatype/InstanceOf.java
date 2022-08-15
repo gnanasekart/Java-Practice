@@ -20,7 +20,7 @@ Dog d1 = new Dog();
 System.out.println("dog: " +(new Dog() instanceof Object));
 System.out.println("cat: " +(new cat() instanceof Object));
 }}
-*/
+ */
 
 
 /* object casting
@@ -48,7 +48,7 @@ Animal a = d;
 a.showIt();
 }
 }
-*/
+ */
 /*
 This downcasting will shows error
 class Animal
@@ -70,7 +70,7 @@ Dog d1 = (Dog)a1;
 d1.show();
 }
 }
-*/
+ */
 
 /*
 class Animal

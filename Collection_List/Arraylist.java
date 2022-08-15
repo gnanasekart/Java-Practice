@@ -1,6 +1,7 @@
 package Collection_List;
 
 import java.util.*;
+import java.util.stream.Collectors;
 public class Arraylist
 {
 	public static void main(String[] args)
@@ -109,5 +110,14 @@ public class Arraylist
 		//System.out.println(list.lastIndexOf(list));
 		Collections.sort(list);
 		System.out.println(list);
+		
+		//-------------removing duplicate----------------------
+		
+		ArrayList<Integer> arrlist = new ArrayList<>(Arrays.asList(1,2 ,3, 3, 2, 4,5, 5, 6, 7, 7,8, 9,9));
+
+		ArrayList<Integer> marks = (ArrayList<Integer>) arrlist.stream().distinct().collect(Collectors.toList());
+
+		System.out.println(marks);
+		
 	}
 }
