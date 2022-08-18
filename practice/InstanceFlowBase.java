@@ -1,4 +1,4 @@
-package NewPack;
+package practice;
 public class InstanceFlowBase {
 int x = 1;
 public void base1()

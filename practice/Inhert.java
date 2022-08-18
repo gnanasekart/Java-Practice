@@ -1,4 +1,4 @@
-package NewPack;
+package practice;
 
 class Inhert implements NewInter, NewInterone {
 

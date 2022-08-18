@@ -1,4 +1,4 @@
-package NewPack;
+package practice;
 
 public class StaticFlowDerived extends StaticFlowBase {
 	static int i = 100;

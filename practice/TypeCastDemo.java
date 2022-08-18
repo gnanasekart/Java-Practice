@@ -1,4 +1,4 @@
-package NewPack;
+package practice;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package NewPack;
+package practice;
 public class InstanceFlowDerived extends InstanceFlowBase {
 int i = 100;
 public void base1()

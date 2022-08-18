@@ -1,4 +1,4 @@
-package NewPack;
+package practice;
 
 public interface NewInterone {
 

@@ -1,4 +1,4 @@
-package NewPack;
+package practice;
 public class StaticFlowBase {
 static int x = 1;
 static

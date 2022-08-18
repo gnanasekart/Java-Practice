@@ -1,4 +1,4 @@
-package NewPack;
+package practice;
 	class P 
 	{
 	public void m1(){
