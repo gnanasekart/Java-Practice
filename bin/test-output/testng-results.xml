@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31" started-at="2022-08-16T08:43:53 IST" finished-at="2022-08-16T08:43:53 IST">
+  <suite name="Default suite" duration-ms="29" started-at="2022-08-24T16:47:58 IST" finished-at="2022-08-24T16:47:58 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31" started-at="2022-08-16T08:43:53 IST" finished-at="2022-08-16T08:43:53 IST">
-      <class name="Code_practice.Cold_Coffee_Bottle_Exchange">
-        <test-method status="PASS" signature="example1()[pri:0, instance:Code_practice.Cold_Coffee_Bottle_Exchange@2b2948e2]" name="example1" duration-ms="16" started-at="2022-08-16T08:43:53 IST" finished-at="2022-08-16T08:43:53 IST">
+    <test name="Default test" duration-ms="29" started-at="2022-08-24T16:47:58 IST" finished-at="2022-08-24T16:47:58 IST">
+      <class name="string.vovel">
+        <test-method status="PASS" signature="vovelExample()[pri:0, instance:string.vovel@2b2948e2]" name="vovelExample" duration-ms="5" started-at="2022-08-24T16:47:58 IST" finished-at="2022-08-24T16:47:58 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- example1 -->
-        <test-method status="PASS" signature="example2()[pri:0, instance:Code_practice.Cold_Coffee_Bottle_Exchange@2b2948e2]" name="example2" duration-ms="0" started-at="2022-08-16T08:43:53 IST" finished-at="2022-08-16T08:43:53 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- example2 -->
-      </class> <!-- Code_practice.Cold_Coffee_Bottle_Exchange -->
+        </test-method> <!-- vovelExample -->
+      </class> <!-- string.vovel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
