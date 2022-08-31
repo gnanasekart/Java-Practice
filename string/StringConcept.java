@@ -38,15 +38,18 @@ System.out.println("intern string not equal");
 		//Immutable string
 		String s1 = new String("Hello");
 		String s2 = s1;
-		//s2 = "help";
+		
 		//System.out.println(s1);
 		s1 = "helping";
+		s1.replace('e', 'a');
+		s2 = "help";
+		System.out.println(s1);
 		// Strings are immutable
 		String s = s1.toUpperCase();
 		String ss = s1.toLowerCase();
 		//System.out.println(s2);
-		System.out.println(s);
-		System.out.println(ss);
+		//System.out.println(s);
+		//System.out.println(ss);
 
 	}
 }

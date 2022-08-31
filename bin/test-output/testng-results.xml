@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29" started-at="2022-08-24T16:47:58 IST" finished-at="2022-08-24T16:47:58 IST">
+  <suite name="Default suite" duration-ms="37" started-at="2022-08-31T19:33:51 IST" finished-at="2022-08-31T19:33:51 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29" started-at="2022-08-24T16:47:58 IST" finished-at="2022-08-24T16:47:58 IST">
-      <class name="string.vovel">
-        <test-method status="PASS" signature="vovelExample()[pri:0, instance:string.vovel@2b2948e2]" name="vovelExample" duration-ms="5" started-at="2022-08-24T16:47:58 IST" finished-at="2022-08-24T16:47:58 IST">
+    <test name="Default test" duration-ms="37" started-at="2022-08-31T19:33:51 IST" finished-at="2022-08-31T19:33:51 IST">
+      <class name="string.countWords">
+        <test-method status="PASS" signature="example1()[pri:0, instance:string.countWords@2b2948e2]" name="example1" duration-ms="15" started-at="2022-08-31T19:33:51 IST" finished-at="2022-08-31T19:33:51 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- vovelExample -->
-      </class> <!-- string.vovel -->
+        </test-method> <!-- example1 -->
+      </class> <!-- string.countWords -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

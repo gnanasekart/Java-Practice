@@ -7,8 +7,30 @@ import practice.baseTestNG;
 public class ArmstrongNumber extends baseTestNG {
 
 	@Test
-	public void armstrong() {
+	public void example1() {
+		int n = 154;
+		armstrongNumber(n);
+	}
+	
+	@Test
+	public void example2() {
 		int n = 153;
+		armstrongNumber(n);
+	}
+	
+	@Test
+	public void example3() {
+		int n = 1221;
+		armstrongNumber(n);
+	}
+	
+	@Test
+	public void example4() {
+		int n = 001;
+		armstrongNumber(n);
+	}
+
+	private void armstrongNumber(int n) {
 		int sum= 0;
 		int remainder, q;
 		int original = n;
