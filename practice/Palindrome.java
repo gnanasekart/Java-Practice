@@ -15,6 +15,12 @@ public class Palindrome {
 		String s = "aba";
 		palindromeString(s);
 	}
+	
+	@Test
+	public void example3() {
+		String s = "nitin";
+		System.out.println(palindromeString1(s));
+	}
 
 	private void palindromeNumber(long num) {
 		long r, sum=0, temp=num;
@@ -33,5 +39,17 @@ public class Palindrome {
 		while(i>=0) ss+=s.charAt(i--);
 		if(s.equals(ss)) System.out.println("Correct");
 		else System.out.println("Wrong");
+	}
+
+	private boolean palindromeString1(String s) {
+		boolean isPalindrome=true;
+		int i=0;
+		while(i<s.length()/2) {
+			if(s.charAt(i) != s.charAt(s.length()-(i++)-1)) {
+				isPalindrome=false;
+				break;
+			}
+		}
+		return isPalindrome;
 	}
 }
