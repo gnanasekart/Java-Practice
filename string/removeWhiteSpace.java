@@ -7,19 +7,30 @@ public class removeWhiteSpace {
 	@Test
 	public void example1() {
 		String str = "This is new  string";
-		removeSpace(str);
+		removeSpace3(str);
 	}
 
-	private void removeSpace(String str) {
+	private void removeSpace1(String str) {
 		StringBuilder strb = new StringBuilder();
+		for(char c: str.toCharArray()) {
+			if(!Character.isWhitespace(c)) {
+				strb.append(c);
+			}
+		}
+		System.out.println(strb.toString());
+	}
+
+	private void removeSpace2(String str) {
 		String sconcat="";
 		for(char c: str.toCharArray()) {
 			if(!Character.isWhitespace(c)) {
-				//strb.append(c);
 				sconcat+=c;
 			}
 		}
-		//System.out.println(strb.toString());
 		System.out.println(sconcat.toString());
+	}
+	
+	private void removeSpace3(String str) {
+		//System.out.println(str.strip());
 	}
 }

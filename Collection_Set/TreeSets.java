@@ -1,7 +1,6 @@
 package Collection_Set;
 import java.util.*;
 
-import com.sun.org.apache.xalan.internal.xsltc.compiler.util.CompareGenerator;
 public class TreeSets {
 
 	public static void main(String[] args) {
