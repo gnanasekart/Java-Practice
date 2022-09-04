@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practice.FibonacciSeries">
+      <class name="Arrays.DuplicateArray">
         <methods>
-          <include name="example2"/>
+          <include name="example1"/>
         </methods>
-      </class> <!-- practice.FibonacciSeries -->
+      </class> <!-- Arrays.DuplicateArray -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
