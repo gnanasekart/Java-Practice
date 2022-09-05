@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35" started-at="2022-09-03T14:25:46 IST" finished-at="2022-09-03T14:25:46 IST">
+  <suite name="Default suite" duration-ms="51" started-at="2022-09-05T20:28:16 IST" finished-at="2022-09-05T20:28:16 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35" started-at="2022-09-03T14:25:46 IST" finished-at="2022-09-03T14:25:46 IST">
-      <class name="Arrays.DuplicateArray">
-        <test-method status="PASS" signature="example1()[pri:0, instance:Arrays.DuplicateArray@4b4523f8]" name="example1" duration-ms="10" started-at="2022-09-03T14:25:46 IST" finished-at="2022-09-03T14:25:46 IST">
+    <test name="Default test" duration-ms="51" started-at="2022-09-05T20:28:16 IST" finished-at="2022-09-05T20:28:16 IST">
+      <class name="Collection_Set.FindDups">
+        <test-method status="PASS" signature="findDups()[pri:0, instance:Collection_Set.FindDups@4b4523f8]" name="findDups" duration-ms="13" started-at="2022-09-05T20:28:16 IST" finished-at="2022-09-05T20:28:16 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- example1 -->
-      </class> <!-- Arrays.DuplicateArray -->
+        </test-method> <!-- findDups -->
+      </class> <!-- Collection_Set.FindDups -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
