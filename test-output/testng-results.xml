@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="51" started-at="2022-09-05T20:28:16 IST" finished-at="2022-09-05T20:28:16 IST">
+  <suite name="Default suite" duration-ms="42" started-at="2022-09-06T19:41:11 IST" finished-at="2022-09-06T19:41:11 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="51" started-at="2022-09-05T20:28:16 IST" finished-at="2022-09-05T20:28:16 IST">
-      <class name="Collection_Set.FindDups">
-        <test-method status="PASS" signature="findDups()[pri:0, instance:Collection_Set.FindDups@4b4523f8]" name="findDups" duration-ms="13" started-at="2022-09-05T20:28:16 IST" finished-at="2022-09-05T20:28:16 IST">
+    <test name="Default test" duration-ms="42" started-at="2022-09-06T19:41:11 IST" finished-at="2022-09-06T19:41:11 IST">
+      <class name="Java8Concept.FindMinAndMax">
+        <test-method status="PASS" signature="example1()[pri:0, instance:Java8Concept.FindMinAndMax@4b4523f8]" name="example1" duration-ms="10" started-at="2022-09-06T19:41:11 IST" finished-at="2022-09-06T19:41:11 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- findDups -->
-      </class> <!-- Collection_Set.FindDups -->
+        </test-method> <!-- example1 -->
+      </class> <!-- Java8Concept.FindMinAndMax -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
