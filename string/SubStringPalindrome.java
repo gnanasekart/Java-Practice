@@ -7,6 +7,7 @@ public class SubStringPalindrome {
 
 	public static void main(String[] args) {
 		String ch = "google";
+		//aaebabad
 		Set<String> set = new HashSet<>();
 		subStringPalindrome(ch, set);
 	}

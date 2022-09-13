@@ -1,4 +1,4 @@
-package Java8Concept;
+package Java8Practice;
 
 public class Zoomcars {
 	
