@@ -16,6 +16,7 @@ public class Instance_Method2 {
 		Bb b = (x, y) -> System.out.println("sum = "+(x+y));
 		b.add(10, 20);
 		
+		//sum is an instance method so we calling using class object ref
 		Bb b1 = new Addition()::sum;
 		b1.add(11, 22);
 		
