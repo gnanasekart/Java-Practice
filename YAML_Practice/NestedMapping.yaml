@@ -1,0 +1,10 @@
+person:
+  name: sekar
+  age: 30
+  address:
+    street: colony
+    number: 2
+    zipcode: 234567
+    city: delhi
+    country: India
+  pets: { dog: pet, lion: animal }

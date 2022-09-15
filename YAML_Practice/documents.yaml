@@ -1,0 +1,9 @@
+lang": yaml
+version: 1.2.2
+---
+and this is starting point of new documents
+---
+key: value
+---
+#can have multiple same key values but in differ documents
+key: value

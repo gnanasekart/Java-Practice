@@ -47,9 +47,9 @@ public class RegexpatternMatcher {
 		String s = "000.12.12.034";
 		String pattern = "3[0-255{3}.]";
 		//String pa = "[0-255].[0-255].[0-255].[0-255]";
-		Pattern pat = Pattern.compile(pa);
-		Matcher matches = pat.matcher(s);
-		System.out.println(matches);
+		//Pattern pat = Pattern.compile(pa);
+		//Matcher matches = pat.matcher(s);
+		//System.out.println(matches);
 		
 	}
 	
@@ -74,3 +74,4 @@ public class RegexpatternMatcher {
 		
 		String regularExpression = "^[a-zA-Z][a-zA-Z_0-9]{7,29}$";
 	}
+}

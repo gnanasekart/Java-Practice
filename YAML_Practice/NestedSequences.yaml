@@ -1,0 +1,11 @@
+flow_style:
+  - [yaml, json]
+  - [python, javascript]
+
+block_style:
+  - - yaml
+    - json
+  - - python
+    - javascript
+
+# here we cannot able to use block style inside flow style

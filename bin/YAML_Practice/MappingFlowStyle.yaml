@@ -1,0 +1,8 @@
+{
+  key: value,
+  another: value,
+  flowlist: [just, a, list],
+  [java, c#, python],
+  version: 1.2.2,
+  "data": yaml,
+}

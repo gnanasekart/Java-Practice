@@ -1,0 +1,15 @@
+name: sekar
+noquotes: without double quotes
+quotes: "with double quotes"
+single: "what ever"
+escape: 'she said: "escaping can only be done"'
+
+float: 1.9
+octal: 0121
+hexadecimal: 0xABC
+
+boolean: true
+nothing: null
+duplicateKeys: not allowed
+"contents": values
+more: "# more items' ' in this"
