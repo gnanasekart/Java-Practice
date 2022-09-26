@@ -1,7 +1,0 @@
-key: value
-list:
-  - first item
-  - second item
-  - third item
-version: 1.2
-"data serialization lang": yaml
