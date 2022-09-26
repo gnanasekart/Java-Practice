@@ -25,7 +25,5 @@ public class ArrayListSort_J8 {
 				.collect(Collectors.toList());
 
 		System.out.println(employee.get(employee.size()-1).getName());
-
 	}
-
 }
