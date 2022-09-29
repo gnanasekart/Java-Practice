@@ -35,10 +35,7 @@ public class LinkedHashSets
 			//System.out.println(list);
 			
 			List<String> lname = new ArrayList<>();
-			for(int i=0; i<name.length; i++)
-			{
-				lname.add(name[i]);
-			}
+        Collections.addAll(lname, name);
 			System.out.println(lname);
 	
 			Set<String> set = new HashSet<>(lname);

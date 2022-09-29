@@ -5,7 +5,7 @@ class Arrayalg
 {
 public static void main(String[] args)
 {
-int arr[] = {1, 5, 2, 8, 7, 3};
+int[] arr = {1, 5, 2, 8, 7, 3};
 //index   -  0  1  2  3  4  5
 
 Arrayalg array = new Arrayalg();
@@ -39,15 +39,12 @@ public int[] addElement(int[] arr, int value, int position)
 {
  int[] result = new int[arr.length + 1];
 //creating new array to copy to new array with increased array size
-for (int i=0; i < position; i++)
-{
-result[i] = arr[i];//copy valu until the position
-}
+//copy valu until the position
+    if (position >= 0) System.arraycopy(arr, 0, result, 0, position);
 result[position] = value;//new value assigned
-for(int i=position+1; i<result.length; i++)
-{
-result[i] = arr[i-1];//moving old value to new index value
-}
+//moving old value to new index value
+    if (result.length - (position + 1) >= 0)
+        System.arraycopy(arr, position + 1 - 1, result, position + 1, result.length - (position + 1));
 return result;
 }
 

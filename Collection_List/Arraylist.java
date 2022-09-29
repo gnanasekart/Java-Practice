@@ -98,10 +98,7 @@ public class Arraylist
 		//------------------Array to list--------------------------------------
 		Integer[] id = {101, 102, 103, 104};
 		List<Integer> ids = new ArrayList<>();
-		for(Integer no:id)
-		{
-			ids.add(no);
-		}
+		Collections.addAll(ids, id);
 		
 		System.out.println(ids);
 		System.out.println(list);

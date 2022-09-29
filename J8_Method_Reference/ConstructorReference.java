@@ -1,11 +1,11 @@
 package J8_Method_Reference;
 
 interface E{
-	public Employee getEmployee();
+	Employee getEmployee();
 }
 
 interface F{
-	public Employee getEmployee(String name, int age);
+	Employee getEmployee(String name, int age);
 }
 
 class Employee{

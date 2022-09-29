@@ -46,8 +46,8 @@ public class DeserializationClass {
 		System.out.println("Deserializing Employee...");
 		System.out.println("First Name of Employee: " + emp.firstName);
 		System.out.println("Last Name of Employee: " + emp.lastName);
-		System.out.println("Company Name: "+emp.companyName);
-		System.out.println("Company CEO: "+emp.companyCEO);
+		System.out.println("Company Name: "+ superEmployee.companyName);
+		System.out.println("Company CEO: "+ superEmployee.companyCEO);
 		System.out.println("Company Address: "+emp.address);
 	}
 }
@@ -69,7 +69,7 @@ Company Address: null
 Bullet Point
 1. A static variable cannot be serialized.
 2. While de-serializing a value can be available for Static variables if the same is provided while initialization of the base class.
-3. It doesn’t mean that static variable will be serialized. It only means that the static variable will be initialized with the same value, 
+3. It doesnï¿½t mean that static variable will be serialized. It only means that the static variable will be initialized with the same value, 
    it is assigned while loading the class(Which is TATA in this case). If classes are not loaded before(New JVM). Please pay attention to example code.
 4. In case class is already loaded in JVM and static variable value has been changed then the changed value will be displayed.
 5. If the variable is defined as Static and Transient both than static modifier will govern the behavior of variable and not Transient.

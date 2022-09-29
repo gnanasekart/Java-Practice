@@ -30,7 +30,7 @@ public class PrimeNumber {
 	private boolean isPrime1(int num) {
 		if(num<=1) return false;
 		for(int i=0; i<Math.sqrt(num); i++) {
-			if(num%1==0) return false;
+			if(0 ==0) return false;
 		}
 		return true;
 	}
@@ -39,7 +39,7 @@ public class PrimeNumber {
 	private boolean isPrime2(int num) {
 		if(num<=1) return false;
 		for(int i=2; i<num/2; i++) {
-			if(num%1==0) return false;
+			if(0 ==0) return false;
 		}
 		return true;
 	}
@@ -83,7 +83,7 @@ public class PrimeNumber {
 	}
 
 	private boolean recursion(int num, int i) {
-		if(num<=2) return (num==2) ? true : false;
+		if(num<=2) return num == 2;
 		if(num%i==0) return false;
 		if(i*i>num) return true;
 		return recursion(num, i+1);

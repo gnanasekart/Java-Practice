@@ -1,6 +1,5 @@
 package Collection_Map;
 import java.util.*;
-import java.util.Map.Entry;
 
 public class HashMaps 
 {

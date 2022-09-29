@@ -36,7 +36,7 @@ System.out.println("intern string not equal");
 }
 		 */
 		//Immutable string
-		String s1 = new String("Hello");
+		String s1 = "Hello";
 		String s2 = s1;
 		
 		//System.out.println(s1);

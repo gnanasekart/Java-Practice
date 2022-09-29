@@ -6,8 +6,6 @@ import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.ListIterator;
 import java.util.Vector;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
 
 public class CursorMethods {
 

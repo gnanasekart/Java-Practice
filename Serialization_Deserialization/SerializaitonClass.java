@@ -29,10 +29,10 @@ public class SerializaitonClass {
 		Employee emp = new Employee();
 		emp.firstName = "Vivekanand";
 		emp.lastName = "Gautam";
-		emp.companyName = "JBT";
+		superEmployee.companyName = "JBT";
 		//Below part needs to be removed in case address field is made final
 		//emp.address = "MUM";
-		emp.companyCEO = "ME CEO";
+		superEmployee.companyCEO = "ME CEO";
 		emp.address = "BTECH";
 
 		try {
@@ -41,7 +41,7 @@ public class SerializaitonClass {
 			out.writeObject(emp);
 			out.close();
 			fileOut.close();
-			System.out.printf("Serialized data is saved in ./employee.txt file");
+			System.out.print("Serialized data is saved in ./employee.txt file");
 		} catch (IOException i) {
 			i.printStackTrace();
 		}

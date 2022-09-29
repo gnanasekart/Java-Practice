@@ -45,8 +45,8 @@ public class Hashsets {
 		int[] arr1 = {1, 3, 5, 7, 9, 3};
 		int[] arr2 = {3, 5, 6, 7, 8};
 		
-		Set<Object> setArr1 = new HashSet<>(Arrays.asList(arr1));
-		Set<Object> setArr2 = new HashSet<>(Arrays.asList(arr2));
+		Set<Object> setArr1 = new HashSet<>(List.of(arr1));
+		Set<Object> setArr2 = new HashSet<>(List.of(arr2));
 		
 		if(setArr1.size()!=setArr2.size())
 			System.out.println("not same size");

@@ -1,7 +1,7 @@
 package J8_Method_Reference;
 
 interface Bb {
-    public  void add(int x, int y);
+    void add(int x, int y);
 }
 
 class Addition {

@@ -26,7 +26,7 @@ public class AlphaPramid {
 		char a = 65;
 		for(int i=0; i<x; i++, a++) {
 			for(int j=0; j<=i; j++) {
-				System.out.print((char)(a)+" ");	
+				System.out.print(a +" ");
 			}
 			System.out.println();
 		}	

@@ -1,7 +1,7 @@
 package J8_Method_Reference;
 
 interface B{
-	public boolean checkDigit(int x);
+	boolean checkDigit(int x);
 }
 
 public class Static_Method2 {

@@ -1,8 +1,5 @@
 package practice;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class foreachlambda {
 
 	public static void main(String[] args) {

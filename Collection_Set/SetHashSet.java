@@ -2,8 +2,6 @@ package Collection_Set;
 //package Collection;
 
 import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
 

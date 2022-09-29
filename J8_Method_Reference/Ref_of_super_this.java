@@ -1,7 +1,7 @@
 package J8_Method_Reference;
 
 interface Ai {
-	public void sayHello();
+	void sayHello();
 }
 
 class SuperClass {

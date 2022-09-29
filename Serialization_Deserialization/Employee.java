@@ -11,7 +11,7 @@ import java.io.Serializable;
 
 public class Employee extends superEmployee {
 	public String firstName;
-	private static final long serialVersionUID = 5462223600l;
+	private static final long serialVersionUID = 5462223600L;
 }
 
 class superEmployee implements Serializable{
@@ -24,5 +24,5 @@ class superEmployee implements Serializable{
 	//transient final String address = "DEL";
 	transient String address = "DEL";
 
-	static transient String companyCEO = "Sekar";
+	static String companyCEO = "Sekar";
 }

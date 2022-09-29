@@ -17,7 +17,7 @@ public class removeWhiteSpace {
 				strb.append(c);
 			}
 		}
-		System.out.println(strb.toString());
+		System.out.println(strb);
 	}
 
 	private void removeSpace2(String str) {
@@ -27,7 +27,7 @@ public class removeWhiteSpace {
 				sconcat+=c;
 			}
 		}
-		System.out.println(sconcat.toString());
+		System.out.println(sconcat);
 	}
 	
 	private void removeSpace3(String str) {

@@ -12,7 +12,7 @@ public class TwoDimentionalArrayMatrix {
 		twoDimensionalAdd(a1, a2, c);
 	}
 
-	public static void twoDimensionalMultiply(int[][]a1, int[][]a2, int c[][]) {
+	public static void twoDimensionalMultiply(int[][]a1, int[][]a2, int[][] c) {
 		//int[][] c = new int[a1.length][a2.length];
 		for(int i=0; i<a1.length; i++) {
 			for(int j=0; j<a1.length; j++) {
@@ -26,7 +26,7 @@ public class TwoDimentionalArrayMatrix {
 		}
 	}
 
-	public static void twoDimensionalAdd(int[][]a1, int[][]a2, int c[][]) {
+	public static void twoDimensionalAdd(int[][]a1, int[][]a2, int[][] c) {
 		int i, j;
 		for(i=0; i<a1.length; i++) {
 			for(j=0; j<a1.length; j++) {

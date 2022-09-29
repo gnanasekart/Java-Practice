@@ -20,14 +20,14 @@ OuterClassReference.new MemberInnerClassConstructor();
  */
 public class TestMemberOuterClass
 {  
-	private int data=30;  
+	private final int data=30;
 	class Inner
 	{  
 		void msg(){
 			System.out.println("data is "+data);
 			}  
 	}  
-	public static void main(String args[])
+	public static void main(String[] args)
 	{  
 		TestMemberOuterClass obj=new TestMemberOuterClass();  
 		TestMemberOuterClass.Inner in=obj.new Inner();  
