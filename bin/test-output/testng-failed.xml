@@ -5,7 +5,7 @@
     <classes>
       <class name="Java8Practice.StreamCollectors">
         <methods>
-          <include name="maxby"/>
+          <include name="toset"/>
         </methods>
       </class> <!-- Java8Practice.StreamCollectors -->
     </classes>
