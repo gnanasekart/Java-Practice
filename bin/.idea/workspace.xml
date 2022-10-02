@@ -53,6 +53,8 @@
       <change beforePath="$PROJECT_DIR$/bin/Java8Practice/FindMinAndMax.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Java8Practice/FindMinAndMax.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Java8Practice/QAList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Java8Practice/QAList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Java8Practice/SortCars.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Java8Practice/SortCars.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Java8Practice/StreamCollectors.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Java8Practice/StreamCollectors.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Java8Practice/StreamMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Java8Practice/StreamMethod.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Java8Practice/Zoomcars.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Java8Practice/Zoomcars.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Java_Lang/RuntimeExample$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Java_Lang/RuntimeExample$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Java_Lang/RuntimeExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Java_Lang/RuntimeExample.class" afterDir="false" />
@@ -108,9 +110,9 @@
       <change beforePath="$PROJECT_DIR$/bin/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/test-output/junitreports/TEST-Java8Practice.StreamCollectors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/junitreports/TEST-Java8Practice.StreamCollectors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/test-output/junitreports/TEST-Java8Practice.StreamMethod.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/junitreports/TEST-Java8Practice.StreamMethod.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/test-output/old/Default suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/old/Default suite/classes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/test-output/old/Default suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/old/Default suite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/test-output/old/Default suite/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/old/Default suite/methods-not-run.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/test-output/old/Default suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/old/Default suite/methods.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/test-output/old/Default suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/old/Default suite/testng.xml.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/test-output/old/Default suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/old/Default suite/toc.html" afterDir="false" />
@@ -121,12 +123,14 @@
       <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-Java8Practice.StreamMethod.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-Java8Practice.StreamMethod.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default suite/classes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default suite/methods-alphabetical.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default suite/methods-not-run.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default suite/methods.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default suite/testng.xml.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default suite/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
