@@ -1,32 +1,38 @@
 package java8Stream;
 
 import java.util.ArrayList;
+
 import java.util.List;
 import java.util.Optional;
+import java.util.function.BinaryOperator;
+import java.util.stream.Stream;
 
 import org.testng.annotations.Test;
 
-public class StreamReducer {
+public class StreamPersonReducer {
 	
 	@Test
-	public void personReducer() {
+	public void personReducerAccumulator() {
 		List<Person> personList = new ArrayList<Person>();
 		personList.add(new Person("sekar", "sekar@mail.com", Gender.MALE, 21));
 		personList.add(new Person("gnana", "gnana@mail.com", Gender.MALE, 23));
 		personList.add(new Person("priya", "priya@mail.com", Gender.FEMALE, 20));
 		personList.add(new Person("laxmi", "laxmi@mail.com", Gender.FEMALE, 21));
 		
-		
+		//Optional<T> reduce(BinaryOperator<T> accumulator)
 		Optional<String> opt = personList.stream().map(p -> p.getName())
 		.reduce((name1, name2) -> name1+", "+name2);
 		
 		if(opt.isPresent()) {
 			System.out.println(opt.get());
 		}
-		
 	}
 	
-	
+	@Test
+	public void intReducer() {
+		//reduce(T identity, BinaryOperator<T> accumulator)
+	System.out.println(Stream.of(2, 3, 4).reduce(0, (x,y) -> (x+y)));
+	}
 	
 
 }
