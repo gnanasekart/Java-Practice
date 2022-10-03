@@ -71,6 +71,13 @@ public class StreamMethod {
 		Stream<Integer> stream = Stream.of(1,2,3,4,5,6,7,8,9);
 		stream.forEach(p -> System.out.println(p));
 	}
+	
+	@Test
+	public void example() {
+		List<Integer> stream = Arrays.asList(1,2,3,4,5,6,7,8,9);
+		//System.out.println(stream.stream().mapToInt(i -> i).sum());
+		System.out.println(stream.stream().reduce(0, Integer::sum));
+	}
 
 	@Test
 	public void example2() {

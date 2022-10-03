@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\t.gnanasekar\AppData\Local\Temp\testng-eclipse--305864080\testng-customsuite.xml</span>
+                    <span>C:\Users\t.gnanasekar\AppData\Local\Temp\testng-eclipse-194556780\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="java8Stream.StreamMethod" class="method navigator-link" hash-for-method="streamConcat">streamConcat</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="java8Stream.StreamPersonReducer" class="method navigator-link" hash-for-method="highestAge">highestAge</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,14 +122,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">java8Stream.StreamMethod</span>
+              <span class="class-name">java8Stream.StreamPersonReducer</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="streamConcat">
-                  </a> <!-- streamConcat -->
-                  <span class="method-name">streamConcat</span>
+                  <a name="highestAge">
+                  </a> <!-- highestAge -->
+                  <span class="method-name">highestAge</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +137,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\t.gnanasekar\AppData\Local\Temp\testng-eclipse--305864080\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\t.gnanasekar\AppData\Local\Temp\testng-eclipse-194556780\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,11 +146,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;java8Stream.StreamMethod&quot;&gt;
+      &lt;class name=&quot;java8Stream.StreamPersonReducer&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;streamConcat&quot;/&gt;
+          &lt;include name=&quot;highestAge&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- java8Stream.StreamMethod --&gt;
+      &lt;/class&gt; &lt;!-- java8Stream.StreamPersonReducer --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -192,14 +192,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'streamConcat')
-data.setCell(0, 2, 'java8Stream.StreamMethod')
-data.setCell(0, 3, 8);
+data.setCell(0, 1, 'highestAge')
+data.setCell(0, 2, 'java8Stream.StreamPersonReducer')
+data.setCell(0, 3, 6);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 ms</span>
+              <span class="suite-total-time">Total running time: 6 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -214,25 +214,15 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">7 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">java8Stream.StreamMethod</span>
+              <span class="ignored-class-name">java8Stream.StreamPersonReducer</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">streamBuilderMethod</span>
+                <span class="ignored-method-name">personReducerAccumulator</span>
                 <br/>
-                <span class="ignored-method-name">example3</span>
-                <br/>
-                <span class="ignored-method-name">example5</span>
-                <br/>
-                <span class="ignored-method-name">parallelStr</span>
-                <br/>
-                <span class="ignored-method-name">foreach</span>
-                <br/>
-                <span class="ignored-method-name">example2</span>
-                <br/>
-                <span class="ignored-method-name">example1</span>
+                <span class="ignored-method-name">intReducer</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -244,9 +234,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">java8Stream.StreamMethod</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">java8Stream.StreamPersonReducer</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">streamConcat</span>
+                <span class="method-name">highestAge</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->

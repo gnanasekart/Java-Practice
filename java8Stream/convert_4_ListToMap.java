@@ -18,7 +18,6 @@ public class convert_4_ListToMap {
 
 		System.out.println(name);
 
-
 		//Map -> stream -> filter -> string
 		String name1 = map.entrySet().stream()
 				.filter(m -> m.getKey() == 3)

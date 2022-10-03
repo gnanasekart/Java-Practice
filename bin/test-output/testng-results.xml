@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-02T15:22:52 IST" name="Default suite" finished-at="2022-10-02T15:22:52 IST" duration-ms="47">
+  <suite started-at="2022-10-03T08:09:32 IST" name="Default suite" finished-at="2022-10-03T08:09:32 IST" duration-ms="30">
     <groups>
     </groups>
-    <test started-at="2022-10-02T15:22:52 IST" name="Default test" finished-at="2022-10-02T15:22:52 IST" duration-ms="47">
-      <class name="java8Stream.StreamReducer">
-        <test-method signature="personReducer()[pri:0, instance:java8Stream.StreamReducer@291b4bf5]" started-at="2022-10-02T15:22:52 IST" name="personReducer" finished-at="2022-10-02T15:22:52 IST" duration-ms="13" status="PASS">
+    <test started-at="2022-10-03T08:09:32 IST" name="Default test" finished-at="2022-10-03T08:09:32 IST" duration-ms="30">
+      <class name="java8Stream.StreamPersonReducer">
+        <test-method signature="intReducer()[pri:0, instance:java8Stream.StreamPersonReducer@2d2ffcb7]" started-at="2022-10-03T08:09:32 IST" name="intReducer" finished-at="2022-10-03T08:09:32 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- personReducer -->
-      </class> <!-- java8Stream.StreamReducer -->
+        </test-method> <!-- intReducer -->
+      </class> <!-- java8Stream.StreamPersonReducer -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
