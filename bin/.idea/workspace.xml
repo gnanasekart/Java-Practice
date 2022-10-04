@@ -5,133 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47740a08-0c70-4afe-b88a-2c668cd08bcd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/bin/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Arrays/ArrayClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Arrays/ArrayClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Arrays/DuplicateArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Arrays/DuplicateArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Clonable_Interface/EmployeeClonable.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Clonable_Interface/EmployeeClonable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Clonable_Interface/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Clonable_Interface/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Code_practice/Cold_Coffee_Bottle_Exchange.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Code_practice/Cold_Coffee_Bottle_Exchange.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_List/ArrayListCompare.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_List/ArrayListCompare.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_List/ArrayLists.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_List/ArrayLists.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_List/CollectionsSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_List/CollectionsSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_List/CursorMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_List/CursorMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_List/Linkedlist.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_List/Linkedlist.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_List/ListInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_List/ListInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_List/MyComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_List/MyComparator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_List/VectorClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_List/VectorClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_Map/CollectionsClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_Map/CollectionsClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_Map/HashMaps.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_Map/HashMaps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_Map/Hashtables.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_Map/Hashtables.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_Map/Linkedhashmaps.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_Map/Linkedhashmaps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_Map/MyComarator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_Map/MyComarator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_Map/Navigablemaps.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_Map/Navigablemaps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_Map/PropertiesFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_Map/PropertiesFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_Map/SecondMostCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_Map/SecondMostCount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_Map/Sortedmaps.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_Map/Sortedmaps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_Map/Treemap.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_Map/Treemap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_Map/sortComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_Map/sortComparator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_Queue/Arraydeques.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_Queue/Arraydeques.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_Queue/Queues.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_Queue/Queues.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_Set/FindDups.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_Set/FindDups.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_Set/Navigableset.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_Set/Navigableset.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_Set/SetHashSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_Set/SetHashSet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_Set/Sortedset.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_Set/Sortedset.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Collection_Set/TreeSets.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Collection_Set/TreeSets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/FileTypes/FileClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/FileTypes/FileClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/J8_Method_Reference/A.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/J8_Method_Reference/A.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/J8_Method_Reference/Arthimatic.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/J8_Method_Reference/Arthimatic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/J8_Method_Reference/InstanceMethodReference.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/J8_Method_Reference/InstanceMethodReference.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/J8_Method_Reference/Meth_Ref_Arbitrary_Obj$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/J8_Method_Reference/Meth_Ref_Arbitrary_Obj$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/J8_Method_Reference/Meth_Ref_Arbitrary_Obj.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/J8_Method_Reference/Meth_Ref_Arbitrary_Obj.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/J8_Method_Reference/PredefinedFunction_Static_Meth_Ref.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/J8_Method_Reference/PredefinedFunction_Static_Meth_Ref.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/J8_Method_Reference/Ref_Static_Method.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/J8_Method_Reference/Ref_Static_Method.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/J8_Method_Reference/Sayable.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/J8_Method_Reference/Sayable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Java8Practice/ArrayListSort_J8.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Java8Practice/ArrayListSort_J8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Java8Practice/FindMinAndMax.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Java8Practice/FindMinAndMax.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Java8Practice/QAList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Java8Practice/QAList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Java8Practice/SortCars.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Java8Practice/SortCars.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Java8Practice/StreamCollectors.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Java8Practice/StreamCollectors.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Java8Practice/StreamMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Java8Practice/StreamMethod.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Java8Practice/Zoomcars.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Java8Practice/Zoomcars.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Java_Lang/RuntimeExample$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Java_Lang/RuntimeExample$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Java_Lang/RuntimeExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Java_Lang/RuntimeExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/RegexPattern/PatternCompile.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/RegexPattern/PatternCompile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/RegexPattern/RegexpatternMatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/RegexPattern/RegexpatternMatcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/RegexPattern/Stringsplit.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/RegexPattern/Stringsplit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/RegexPattern/TagExtract.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/RegexPattern/TagExtract.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Thread/CollectionsSynchronized.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Thread/CollectionsSynchronized.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Thread/RunnableInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Thread/RunnableInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Thread/SynchronizeClass$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Thread/SynchronizeClass$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Thread/SynchronizeClass$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Thread/SynchronizeClass$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Thread/SynchronizeClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Thread/SynchronizeClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Thread/ThreadClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Thread/ThreadClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Thread/VolatileKeyword.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Thread/VolatileKeyword.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/datatype/defaultvalue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/datatype/defaultvalue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/A.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/A.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/AdapterX.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/AdapterX.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/Anagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/Anagram.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/ArmstrongNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/ArmstrongNumber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/B.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/B.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/C.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/C.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/Cc.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/Cc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/Drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/Drawable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/FibonacciSeries.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/FibonacciSeries.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/Inhert.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/Inhert.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/InstanceFlowBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/InstanceFlowBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/InstanceFlowDerived.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/InstanceFlowDerived.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/Overridingtest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/Overridingtest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/P.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/P.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/Palindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/Palindrome.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/Recfactorial.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/Recfactorial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/StaticFlowBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/StaticFlowBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/StaticFlowDerived.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/StaticFlowDerived.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/Swap.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/Swap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/TypeCastDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/TypeCastDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/baseTestNG.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/baseTestNG.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/foreachlambda.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/foreachlambda.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/lambdademo.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/lambdademo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/practice/stateName.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/practice/stateName.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/printf_format/printf_formating_example.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/printf_format/printf_formating_example.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/string/Containindex.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/string/Containindex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/string/RemoveCharFromString.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/string/RemoveCharFromString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/string/Searchchar.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/string/Searchchar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/string/StringReverse.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/string/StringReverse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/string/StringReverseWithSpecChar.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/string/StringReverseWithSpecChar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/string/SubString.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/string/SubString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/string/SubStringPalindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/string/SubStringPalindrome.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/string/countWords.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/string/countWords.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/string/vovel.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/string/vovel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/java8Stream/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/java8Stream/Article.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/java8Stream/FlatMapConcept.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/java8Stream/FlatMapConcept.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/java8Stream/Gender.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/java8Stream/Gender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/java8Stream/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/java8Stream/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/java8Stream/StreamArticle.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/java8Stream/StreamArticle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/java8Stream/StreamCollectors.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/java8Stream/StreamCollectors.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/java8Stream/StreamMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/java8Stream/StreamMethod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/java8Stream/StreamPersonReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/java8Stream/StreamPersonReducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/java8Stream/convert_1_ClsToStr.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/java8Stream/convert_1_ClsToStr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/java8Stream/convert_2_StreamToArr.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/java8Stream/convert_2_StreamToArr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/java8Stream/convert_4_ListToMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/java8Stream/convert_4_ListToMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/java8Stream/convert_4_MapToMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/java8Stream/convert_4_MapToMap.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/test-output/Default suite/Default test.html" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/Default suite/Default test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/test-output/Default suite/Default test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/Default suite/Default test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/test-output/Default suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/Default suite/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/test-output/junitreports/TEST-Java8Practice.StreamCollectors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/junitreports/TEST-Java8Practice.StreamCollectors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/test-output/junitreports/TEST-Java8Practice.StreamMethod.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/junitreports/TEST-Java8Practice.StreamMethod.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/test-output/junitreports/TEST-java8Stream.StreamMethod.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/junitreports/TEST-java8Stream.StreamMethod.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/test-output/junitreports/TEST-java8Stream.StreamPersonReducer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/junitreports/TEST-java8Stream.StreamPersonReducer.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/test-output/old/Default suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/old/Default suite/classes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/test-output/old/Default suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/old/Default suite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/test-output/old/Default suite/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/old/Default suite/methods-not-run.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/test-output/old/Default suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/old/Default suite/methods.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/test-output/old/Default suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/old/Default suite/testng.xml.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/test-output/old/Default suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/old/Default suite/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/test-output/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test-output/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-Java8Practice.StreamMethod.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-Java8Practice.StreamMethod.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default suite/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default suite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default suite/methods-not-run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default suite/testng.xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default suite/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +58,20 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;Groovy compiler&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.ArrayListSort_J8">
+  <component name="RunManager" selected="Application.HashMaps">
+    <configuration name="HashMaps" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Collection_Map.HashMaps" />
+      <module name="Java-Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Collection_Map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Hashtables" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Collection_Map.Hashtables" />
       <module name="Java-Practice" />
@@ -226,31 +137,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamMethod.foreach" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Java-Practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Java8Practice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Java8Practice" />
-      <option name="MAIN_CLASS_NAME" value="Java8Practice.StreamMethod" />
-      <option name="METHOD_NAME" value="foreach" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HashMaps" />
         <item itemvalue="TestNG.ArrayListSort_J8" />
         <item itemvalue="TestNG.StreamMethod" />
         <item itemvalue="TestNG.ArrayListSort_J8.example1" />
         <item itemvalue="Application.Hashtables" />
-        <item itemvalue="TestNG.StreamMethod.foreach" />
       </list>
     </recent_temporary>
   </component>
