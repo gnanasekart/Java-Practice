@@ -1,5 +1,6 @@
 package Collection_Map;
 import java.util.*;
+import java.util.Map.Entry;
 
 public class HashMaps 
 {
@@ -21,34 +22,41 @@ public class HashMaps
 		//System.out.println(map == hmap);//false
 		
 		//compute
-		map.compute(2, (k, v) -> "gnana ".concat(v));
-		
-		map.computeIfPresent(1, (k, v) -> v.concat(" sekar"));
-		
-		System.out.println(map.get(2));
-		
-		System.out.println(map);
-		
-		/*
-		map.forEach((k,v) -> System.out.println(k+" - "+v));
+//		map.compute(2, (k, v) -> "gnana ".concat(v));
+//		
+//		map.computeIfPresent(1, (k, v) -> v.concat(" sekar"));
+//		
+//		System.out.println(map.get(2));
+//		
+//		System.out.println(map);
+//		
+//		
+//		map.forEach((k,v) -> System.out.println(k+" - "+v));
+//
+//		//map.remove(1);
+//		map.equals(3);
+//		map.replace(1, "guna");
+//		map.replace(1, "guna", "gana");
 
-		//map.remove(1);
-		map.equals(3);
-		map.replace(1, "guna");
-		map.replace(1, "guna", "gana");
+//		System.out.println(map);//{null=null, 1=gana, 2=sekar, 3=kumar, 4=null}
+//
+//		System.out.println(map.get(1));//gana
+//		System.out.println(map.getOrDefault(3, "gnanasekar"));//kumar
+//		System.out.println(map.getOrDefault(6, "gnanasekar"));//gnanasekar
+//		System.out.println(map.size());//5
 
-		System.out.println(map);//{null=null, 1=gana, 2=sekar, 3=kumar, 4=null}
-
-		System.out.println(map.get(1));//gana
-		System.out.println(map.getOrDefault(3, "gnanasekar"));//kumar
-		System.out.println(map.getOrDefault(6, "gnanasekar"));//gnanasekar
-		System.out.println(map.size());//5
-
+		String[] s = {"a", "b", "c"};
+		for(String ss: s) {
+			System.out.println(ss);
+		}
+		
+		
 		for(Map.Entry m : map.entrySet())
 		{
+			if(map.containsKey(m.getKey()))
 			System.out.println(m.getKey()+" : "+m.getValue());
 		}
-
+		
 		map.entrySet().stream().sorted(Map.Entry.comparingByKey()).forEach(System.out::println);
 
 		map.entrySet()  
@@ -75,7 +83,7 @@ public class HashMaps
 
 		if(map.containsKey(2)) map.put(map.size(), "newValue");
 		else map.put(2, "oldValue");
-		 */
+		
 
 		//map.forEach((k,v) -> System.out.println(k+" - "+v));
 

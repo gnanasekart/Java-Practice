@@ -26,8 +26,5 @@ public class Navigablemaps {
 		System.out.println(sm.pollFirstEntry());//1=a
 		
 		System.out.println(sm.pollLastEntry());//7=a
-		
-		
 	}
-
 }
