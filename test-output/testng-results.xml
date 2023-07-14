@@ -6,12 +6,12 @@
     <groups>
     </groups>
     <test started-at="2022-10-03T15:13:26 IST" name="Default test" finished-at="2022-10-03T15:13:26 IST" duration-ms="29">
-      <class name="java8Stream.StreamPersonReducer">
-        <test-method signature="highestAge()[pri:0, instance:java8Stream.StreamPersonReducer@1ebd319f]" started-at="2022-10-03T15:13:26 IST" name="highestAge" finished-at="2022-10-03T15:13:26 IST" duration-ms="6" status="PASS">
+      <class name="Java_Version_8.java8Stream.StreamPersonReducer">
+        <test-method signature="highestAge()[pri:0, instance:Java_Version_8.java8Stream.StreamPersonReducer@1ebd319f]" started-at="2022-10-03T15:13:26 IST" name="highestAge" finished-at="2022-10-03T15:13:26 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- highestAge -->
-      </class> <!-- java8Stream.StreamPersonReducer -->
+      </class> <!-- Java_Version_8.java8Stream.StreamPersonReducer -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
