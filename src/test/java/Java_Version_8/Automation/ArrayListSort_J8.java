@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.junit.Test;
-import org.testng.annotations.Test;
+
 
 public class ArrayListSort_J8 {
 
