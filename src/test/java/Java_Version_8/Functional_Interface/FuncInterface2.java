@@ -68,5 +68,36 @@ public void m1();
 
 valid one
 if the child and parent have same abstract method with same name means it is acceptable.
+
+case 3 :- If the child interface we can define any new abstract methods
+
+@FunctionalInterface
+interface FuncInterface2 {
+public void m1();
+}
+
+@FunctionalInterface
+interface FuncInterface3 extends FuncInterface2 {
+public void m2();
+}
+
+invalid
+CE - Unexpected @FI annotations, multiple non overriding abstract methods found in interface FuncInterface3.
+
+
+case 4 :- If the child interface we can define any new abstract methods
+
+@FunctionalInterface
+interface FuncInterface2 {
+public void m1();
+}
+
+interface FuncInterface3 extends FuncInterface2 {
+public void m2();
+}
+
+valid one
+second interface contains two abstract methods.
+
  */
 
