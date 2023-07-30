@@ -2,9 +2,9 @@ package Java_Version_8.Functional_Interface;
 
 
 
-/*
 
-if two non-abstract methods present
+
+//if two non-abstract methods present
 //@FunctionalInterface
 interface FuncInterface2 {
 public void m1();
@@ -12,7 +12,7 @@ public void m1();
 public void m2();
 
 }
-
+/*
 
 CE: FuncInterface2.java:3: error: Unexpected @FunctionalInterface annotation
 @FunctionalInterface
