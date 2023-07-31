@@ -1,3 +1,23 @@
+Stream s = c.Stream();
+
+Stream is an interface present in java.util.stream package
+c -- can be any collection object
+stream() -- This method present inside Collection interface as default method
+
+once after stream is created. we can perform on collection object by two stages
+
+1. Configuration - can perform using two mechanism
+    - Filter - based on some boolean condition filter the object from collection, can configure by filter() method
+        public Stream filter(Predicate <T> t)
+        Ex- Stream s = c.Stream().filter(i->i%2==0);
+
+    - Map - if we want to create a seperate new object for every object present in the collection based on some function.
+        can implement using map() of stream interface
+        public Stream map(Function<T, R> f
+        ex- Stream s = c.Stream().map(i->i*2);
+
+2. Processing
+
 
 1. Different Collect.Collectors Methods
 
