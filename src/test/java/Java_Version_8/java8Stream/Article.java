@@ -5,6 +5,9 @@ public class Article {
 	private String title;
 	private String author;
 	private String tagName;
+	public Article(){
+
+	}
 	
 	public Article(String title, String author, String tagName) {
 		super();

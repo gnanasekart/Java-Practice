@@ -7,12 +7,10 @@ import java.util.Optional;
 public class Optional_Class {
 
     public static void main(String[] args) {
-       // Optional<Article> p = Optional.empty();
+        //Optional<Article> p = Optional.empty();
 
         Article ar = new Article();
-        //Optional<Article> p = Optional.of(ar);
-
-
+        Optional<Article> p = Optional.of(ar);
 
         Optional<Article> p1 = Optional.ofNullable(ar);
 
