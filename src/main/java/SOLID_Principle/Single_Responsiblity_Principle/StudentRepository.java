@@ -26,3 +26,9 @@ public class StudentRepository {
     }
 
 }
+
+class MyUtils {
+    public static String serializeIntoAString(Student student){
+        return "";
+    }
+}

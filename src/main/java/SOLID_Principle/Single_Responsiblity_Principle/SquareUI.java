@@ -5,6 +5,7 @@ public class SquareUI {
     int side = 5;
 
     public void draw(){
+        boolean highResolutionMonitor = true;
         if(highResolutionMonitor){
             //render a high resolution
         } else {
