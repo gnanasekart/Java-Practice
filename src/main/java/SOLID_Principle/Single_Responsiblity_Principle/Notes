@@ -1,0 +1,6 @@
+Every Software component should have one and only one reason to change
+- If there are multiple reason to change then the frequency of changes to it will increase.
+- Every change to a software component opens up the possibility of introducing bugs into the software.
+- the probability of introducing a bug goes up.
+- This would require more time and effort to be spent of retesting the software after the changes are made.
+- more time & efforts = money
