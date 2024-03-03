@@ -1,0 +1,21 @@
+Software components should be closed for modification, but open for extension.
+
+Closed for Modification means new features getting added to the software component, should NOT have to modify existing code.
+Open for Extension means a software component to add a new feature or to add a new behaviour to it.
+
+Key takeaways
+1. Easy of adding new features.
+2. Leads to minimal cost of developing and testing software.
+3. OCP often requires decoupling, which in turn automatically follows the Single Responsibility principle.
+
+
+SOLID Principles
+- Are all intertwined and interdependent.
+- Are most effective when they are combined together.
+- It is important to get a wholesome view of all the SOLID Principles.
+
+Caution
+- Do not follow the OCP blindly.
+- You will end up with a huge no of classes that can complicate your overall design.
+- Make a subjective, rather than an objective decision.
+
