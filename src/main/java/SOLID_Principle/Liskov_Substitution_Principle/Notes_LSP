@@ -1,0 +1,10 @@
+Objects should be replaceable with their subtypes without affecting the correctness of the program.
+
+The bird and Car class defines the same problem
+
+LSP applied on this issue and created a new main class as VehicleUtils_LSP
+Followed that Vehicle_LSP is base class and remaining two *_LSP classes are subclasses
+
+Solution
+- Break the hierarchy if it fails the substitution test.
+- Tell don't ask.
