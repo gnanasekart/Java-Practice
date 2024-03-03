@@ -1,0 +1,21 @@
+No Client should be forced to depend on methods it does not use.
+
+Techniques To identify Violations of ISP
+
+1. Fat Interfaces - Interfaces with high no of methods. Ex- IMultifunction interface
+
+2. Interfaces with Low Cohesion - in this interfaces there are many methods among them scan photo and
+fax are two different concept via transmission of info.
+This is like low cohesion in high multi function interface.
+
+3. Empty method Implementation - blank interfaces
+
+Comparing the similarity this principle with other SOLID principles
+1. Once after separating IMultiFunction, then each interfaces is design on Single responsibility principle.
+
+
+
+SOLID Principles complement each other, and work together in unison, to achieve the common purpose
+of well-designed software.
+
+
