@@ -16,6 +16,6 @@ public class VolatileKeyword extends Thread {
 		vk.start();
 		Thread.sleep(1000);
 		vk.keepRunning = false;
-		System.out.println("keeprunning is false");
+		System.out.println("keep running is false");
 	}
 }

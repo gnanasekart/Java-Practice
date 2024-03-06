@@ -1,0 +1,16 @@
+1. To retrieve the current thread from JVM
+Thread currentthread = Thread.currentThread();
+currentthread.getName();
+
+2. Set the thread priority
+Thread Object
+obj.setPriority(priority_type);
+
+1. MAX_PRIORITY - 10
+2. NORM_PRIORITY - 5(default for any thread)
+3. MIN_PRIORITY - 1
+
+3. Yield() Method - Is a static method of Thread class and it can stop the currently executing thread and
+will give a chance to other waiting threads of the same priority. If in case there are no waiting threads
+or if all the waiting threads have low priority then the same thread will continue its execution.
+

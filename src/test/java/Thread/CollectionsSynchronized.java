@@ -1,16 +1,38 @@
 package Thread;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 import org.testng.annotations.Test;
 
-public class CollectionsSynchronized {
+public class CollectionsSynchronized extends Thread{
+	static int n, sum=0;
+
+	public static void main(String[] args)  {
+		System.out.println("sum of first n numbers");
+		System.out.println("Enter a value");
+		Scanner scanner = new Scanner(System.in);
+		CollectionsSynchronized.n=scanner.nextInt();
+		CollectionsSynchronized obj = new CollectionsSynchronized();
+		obj.start();
+        try {
+            obj.join();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+		System.out.println("sum of first "+CollectionsSynchronized.n+"number is "+CollectionsSynchronized.sum);
+    }
+
+	public void run(){
+		for (int i = 0; i < n; i++) {
+			CollectionsSynchronized.sum += i;
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+	}
 
 	@Test
 	public void synchronised_Collection() throws InterruptedException {
