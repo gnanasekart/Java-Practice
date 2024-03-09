@@ -1,0 +1,38 @@
+Introduction - Multi threading concept
+Multitasking - Executing several task simultaneously is the concept of MT.
+-> Process based MT - execution several task simultaneously, where each task is separate independent process.
+Ex- OS level
+-> Thread based MT - executing multi task simultaneously, where task is separate independent part of same program
+and each independent part is called thread
+Ex- Programmatic level
+
+Advantage:-
+To reduce response time of the system and to improve performance.
+the main important applications of MT
+- To develop multimedia, animations, video games.
+- To develop web & App servers, etc.
+
+
+1. How many ways of define a thread ?
+- By Extending Thread Class
+- By Implementing Runnable Interface
+
+2. Getting & Setting name of Thread
+
+3. Thread Priorities
+
+4. Method to prevent Thread execution
+- yield()
+- join()
+- sleep()
+
+5. Synchronization
+
+6. InterThread communication
+
+7. Deadlock
+
+8. Demon Threads
+
+9. Multithreading enhancement
+
