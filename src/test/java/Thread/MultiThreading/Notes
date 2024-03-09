@@ -6,15 +6,180 @@ Ex- OS level
 and each independent part is called thread
 Ex- Programmatic level
 
+When compared with Old Language developing multi threaded applications in Java is very
+easy because Java provide inbuild support for multi threading with Rich API.
+(Thread, Runnable, ThreadGroup...)
+
 Advantage:-
 To reduce response time of the system and to improve performance.
 the main important applications of MT
 - To develop multimedia, animations, video games.
 - To develop web & App servers, etc.
 
+Defining a Thread ?
+We can define a thread in two ways.
+1. By Extending Thread Class
 
-1. How many ways of define a thread ?
-- By Extending Thread Class
+Class MyThread extends Thread { //This class defining a thread
+    public void run() {
+        for(int i=0; i<10; i++){  //this loop is Job of thread
+        sout("child thread");
+        }
+    }
+}
+
+Class ThreadDemo {
+    public static void main(String[] args){//main thread
+        MyThread t = new MyThread();//main thread helps to create child thread obj
+        t.start();//main thread starts child thread
+        //child thread is responsible to execute run method
+
+        for(int i=0; i<10; i++){//main thread responsible
+            sout("main thread");
+        }
+    }
+}
+
+case 1 - Thread scheduler
+- part of JVM
+It is the part of JVM, it is responsible to schedule threads that is if multiple threads are waiting to get the chance of execution.
+Then in which order threads will be executed by thread scheduler.
+We can't expect algorithm followed by thread scheduler it is varied from JVM to JVM.
+Hence we can't expect thread execution order and exact output.
+Hence when ever situation comes to multi threading there is no garrenty for exact output But we can provide several possible outputs.
+
+from the above ThreadDemo class we can t.start() to call run() method
+
+case 2-
+Difference between t.start() and t.run()
+t.start() => a new thread will be created which is responsible for execution of run method.
+But in the case of t.run() a new thread wont be created and run method will be executed just like a normal method call
+by main thread.
+Hence in the above program if we replace t.start() with t.run(), then the output is
+run method output follow by main method output. this entire output is produced by main thread.
+
+case 3-
+Importance of Thread.start() methods perform
+start() {
+1. Register this thread with thread scheduler
+2. Perform all other mandatory activities
+3. Invoke run() method
+}
+
+case 4-
+Overloading of run()
+Overloading of run method is always possible but thread class start method can invoke no argument run method.
+Other overloaded method we have to call explicitly like a normal method call.
+
+Example
+
+public class Overload_run_method {
+    public static void main(String[] args) {
+       MyThread t = new MyThread();
+       t.start();
+    }
+}
+o/p - no-arg run
+
+class MyThread extends Thread{
+    public void run(){
+        System.out.println("no arg run");
+    }
+    public void run(int i){
+        System.out.println("int arg run");
+    }
+}
+
+case 5-
+If we are not overriding run method - there is no any implementation/overriding of run method.
+Then it will call the default run method (thread.run()) - which has empty implementation. it does not return any output.
+
+Example
+
+public class Overload_run_method {
+    public static void main(String[] args) {
+       MyThread t = new MyThread();
+       t.start();
+    }
+}
+o/p - no output
+
+class MyThread extends Thread{
+
+}
+
+Note - recommended to override run method, otherwise not required for multi threading concept.
+
+case 6-
+Overriding of start method
+If we override start method then our start method will be executed just like a normal method call and new thread wont be created.
+priority goes first to child method only than thread class start method.
+
+Example
+
+public class Overload_start_method {
+    public static void main(String[] args) {
+        MyThreadStart t = new MyThreadStart();
+       t.start();
+        System.out.println("main method");
+    }
+}
+
+class MyThreadStart extends Thread{
+    public void start(){
+        System.out.println("start method");
+    }
+    public void run(){
+        System.out.println("run method");
+    }
+}
+output-
+start method
+main method
+
+this outputs are produced by only main thread
+Note - it is not recommended to override start method, otherwise don't go for multi thread concept.
+
+case 7-
+By calling super class thread method
+
+public class Overload_start_method {
+    public static void main(String[] args) {
+        MyThreadStart t = new MyThreadStart(); // main thread
+       t.start();                              // main thread
+        System.out.println("main method");
+    }
+}
+
+class MyThreadStart extends Thread{
+    public void start(){                    // main thread
+        super.start();                      // create child thread
+        System.out.println("start method"); // main thread
+    }
+    public void run(){                      // child thread take care of run() from start()
+        System.out.println("run method");
+    }
+}
+
+output-
+start method
+main method
+run method
+or
+start method
+run method
+main method
+
+case 8-
+Life cycle of thread
+image refer one note
+
+case 9-
+once we create a thread by thread.start() and again we try to restart the same thread, then it throws
+IllegalThreadStateException
+
+
+
 - By Implementing Runnable Interface
 
 2. Getting & Setting name of Thread
@@ -35,4 +200,5 @@ the main important applications of MT
 8. Demon Threads
 
 9. Multithreading enhancement
+
 
