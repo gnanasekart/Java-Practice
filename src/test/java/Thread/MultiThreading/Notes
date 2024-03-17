@@ -181,53 +181,6 @@ IllegalThreadStateException
 
 
 - By Implementing Runnable Interface
-Runnable interface present in Java.lang package and it contain only one method run()
-
-class MyRunnable implements Runnable {
-    public void run() { //child thread
-        for(int i=0; i<10; i++){
-        sout("child thread");
-        }
-    }
-}
-
-class ThreadDemo {
-public static void main(String[] args){
-    MyRunnable r = new MyRunnable();
-    Thread t = new Thread(r); //r - target runnable
-    t.start();
-     for(int i=0; i<10; i++){//main thread
-     sout("main thread");
-     }
-}
-
-case study based on above code-
-
-MyRunnable r = new MyRunnable();
-Thread t1 = new Thread();
-Thread t2 = new Thread(r);
-
-case 1:- t1.start();
-Create a new thread, which is responsible for the execution of thread.run(), which has empty implementation.
-
-case 2:- t1.run();
-no new thread will be created, and thread class run() will be executed just like a normal method call.
-
-case 3:- t2.start();
-A new thread will be created which is responsible for the execution of my runnable class run method.
-
-case 4:- t2.run();
-No new thread created and MyRunnable - will call the run method as normal method call.
-
-case 5:- r.start();
-we will compile time error saying MyRunnable class doesn't have start capability.
-CE: Cannot find symbol
-symbol: method start()
-location: class MyRunnable
-
-case 6:- r.run();
-No new thread will be created and MyRunnable - run method will be executed as normal method call.
-
 
 2. Getting & Setting name of Thread
 
