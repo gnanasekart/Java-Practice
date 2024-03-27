@@ -455,7 +455,117 @@ Note-
 every join method throws InterruptedException - checked exception
 while a thread is waiting
 
-continue 1:35:56
+case 1 -
+
+public class JoinDemo {
+    public static void main(String[] args) throws InterruptedException {
+        MyThreadJoin myt = new MyThreadJoin();
+        myt.start();
+        //myt.join(); // first child thread complete and main thread will continue
+        myt.join(10000);//wait for 10 sec and execute both thread simultaneously
+        for (int i = 0; i < 10; i++) {
+            System.out.println("main thread");
+        }
+    }
+}
+
+public class MyThreadJoin extends Thread{
+    public void run(){
+        for (int i = 0; i < 10; i++) {
+            try {
+                System.out.println("child thread");
+                 Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+}
+
+
+output -
+child thread
+child thread
+child thread
+child thread
+child thread
+main thread
+main thread
+main thread
+main thread
+main thread
+main thread
+main thread
+main thread
+main thread
+main thread
+child thread
+child thread
+child thread
+child thread
+child thread
+
+case 2 - waiting of child thread until completing of main thread
+public class JoinDemoChildThread {
+    public static void main(String[] args) throws InterruptedException {
+        MyThreadJoinChild.t = Thread.currentThread();
+        MyThreadJoinChild myt = new MyThreadJoinChild();
+        myt.start();
+        for (int i = 0; i < 10; i++) {
+            System.out.println("main thread");
+            Thread.sleep(2000);
+        }
+    }
+}
+
+class MyThreadJoinChild extends Thread{
+    static Thread t;
+    public void run(){
+            try {
+                t.join();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        for (int i = 0; i < 10; i++) {
+            System.out.println("child thread");
+        }
+        }
+    }
+
+    Child thread calls join method on main thread object, hence child thread has to wait until completing main thread.
+In this case output is
+        main thread
+        main thread
+        main thread
+        main thread
+        main thread
+        main thread
+        main thread
+        main thread
+        main thread
+        main thread
+        child thread
+        child thread
+        child thread
+        child thread
+        child thread
+        child thread
+        child thread
+        child thread
+        child thread
+        child thread
+
+case 3- if main thread calls join method on child thread object and child thread calls join on main method object, then both the thread will wait forever
+and the program will be in lock/paused. this is like dead lock.
+
+case 4 - If a thread calls join method on the same thread itself. then the program fall in deadlock.
+Thread.currentThread().join();
+
+--------------------------------
+
+Sleep method
+
+
 
 5. Synchronization
 
