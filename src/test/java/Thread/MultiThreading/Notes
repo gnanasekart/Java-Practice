@@ -370,12 +370,92 @@ Some platforms won't provide support for thread priorities.
 yield();
 yield method causes to pause current executing thread to give the chance for waiting threads of same priority.
 If there is no waiting thread or all waiting threads have low priority then same thread can continue its execution.
-If multi thread waiting with same priority means which waiting thread will get the chance ? we can't expect it depends on thread scheduler.
+If multi waiting threads and current executing thread have same priority means which waiting thread will get the chance ? we can't expect it depends on thread scheduler.
 the thread which is yielded, when it will get the chance once again it depends on thread scheduler. and cannot expect exactly.
 
+public static native void yield();
 
+If a running thread called yield method, then it will move to ready/runnable method.
 
+public class YieldDemo {
+    public static void main(String[] args) {
+        MyThread myt = new MyThread();
+        myt.start(); // will call no argument run method
+        for (int i = 0; i < 10; i++) {
+            System.out.println("main thread");
+        }
+    }
+}
 
+public class MyThread extends Thread{
+    public void run(){
+        MyThread my = new MyThread();
+        my.setPriority(MAX_PRIORITY);
+        for (int i = 0; i < 10; i++) {
+            System.out.println("child thread");
+            my.yield();
+        }
+    }
+}
+
+o/p-
+main thread
+main thread
+main thread
+main thread
+main thread
+main thread
+main thread
+main thread
+main thread
+main thread
+child thread
+child thread
+child thread
+child thread
+child thread
+child thread
+child thread
+child thread
+child thread
+child thread
+
+Child thread calls yield method, so main thread will get more chance more no of time,
+and the chance of complete main thread first is high.
+
+------------------------------------------------------
+
+Join method
+If a Thread wants to wait until completing some other thread. Then go for join method.
+
+For Example - If a thread t1 want to wait until completing t2. then t1 has to call t2.join();
+If t1 executes t2.join() then immediately t1 will be entered into waiting state until t2 completes.
+Once t2 completes then t1 can continue its execution.
+
+Example 2 consider marriage as example
+
+hall booking (t1)  ~~~~~~~~~~~~~~~~~
+
+wedding cards (t2) ~~~~t1.join();
+printing
+
+wedding card  (t3) ~~~~t2.join();
+distribution
+
+t2 event is dependency on t1 event
+And t3 is dependency on t2 event
+
+protocol -
+
+public final void join() throws InterruptedException
+public final void join(long ms);//waiting for some time
+public final void join(long ms, int ns);//waiting for some time with nano seconds
+
+Note-
+every join method throws InterruptedException - checked exception
+while a thread is waiting
+
+continue 1:35:56
 
 5. Synchronization
 
