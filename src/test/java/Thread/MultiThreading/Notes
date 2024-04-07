@@ -592,6 +592,58 @@ then there is no impact of interrupt call.
 ------------------------------------------
 
 5. Synchronization
+- Synchronized is the modifier applicable only methods and blocks, but not for class and variables.
+- If multi thread trying to access on the same java object then there will be possible for data inconsistency.
+- To avoid this we should go for synchronized keyword.
+- If a method or block declared as synchronized then at a time only one thread is allow to execute
+that method or block on the given object.
+- So that data inconsistency will be resolved.
+
+Advantage of synchronized keyword
+- we can resolve data inconsistency problems
+
+Disadvantage of synchronized keyword
+- It increases waiting time of threads and creates performance problem. hence
+if there is no specific requirement then it is not recommended to use synchronized keyword.
+
+internally synchronization concept is implemented by using lock,
+every object in java having a unique lock.
+whenever we are using synchronized keyword then only lock concept is consider.
+
+If a thread wants to execute synchronized methods on the given object.
+- First i has to get lock of that object
+- once thread got lock of the object, then it allow to execute any synchronized method on that object.
+- Once method execution completed, automatically thread release the lock.
+
+Acquiring and releasing lock internally takes care by JVM and programmer
+not responsible for this activities.
+
+While a thread executing synchronized method and given object the remaining thread
+are not allowed to execute any synchronized method simultaneously on the same object.
+But remaining threads are allow to execute non synchronized methods simultaneously.
+class x{
+sync m1();
+sync m2();
+m3();
+}
+
+t1 came to starts execute m1()
+if t2 came to execute same m1() waiting state
+t3 came to execute m2() waiting state
+t4 came to execute m3() not wait
+
+lock concept is implemented based on object but not based on method.
+
+Every Object has two side as
+synchronized area - this area accessed by only one thread at a time.
+where ever we are performing update operations {add/remove/Delete/Replace}, that is where state of object changing.
+
+non-synchronized area - This area is accessed by any no of threads simultaneously.
+Where ever object state won't be changed like read operations
+
+
+
+
 
 6. InterThread communication
 
