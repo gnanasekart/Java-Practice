@@ -564,8 +564,32 @@ Thread.currentThread().join();
 --------------------------------
 
 Sleep method
+not perform any operation for some time.
 
+public static native void sleep(long ms) throws InterruptedException
+public static void sleep(long ms, int ns) throws InterruptedException
 
+If running thread calls sleep method
+Thread.sleep(1000);
+Thread.sleep(1000,100);
+
+it will move to ready or runnable state once after
+- if time expired
+- If sleeping thread got interrupted
+
+-----------------------------------
+
+How a thread can interrupt another thread ?
+A thread can interrupt a sleeping thread or waiting thread by using interrupt method of thread class.
+public void interrupt();
+
+If the target thread not in sleeping or waiting state, then there is no impact of interrupt call will be waited
+until target thread entered into sleeping or waiting state.
+If the target thread enter into sleeping or waiting state, then immediately
+interrupt call will interrupt the target thread.
+if the target thread never enter into sleeping or waiting state. In its life time
+then there is no impact of interrupt call.
+------------------------------------------
 
 5. Synchronization
 
