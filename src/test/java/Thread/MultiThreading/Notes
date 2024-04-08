@@ -641,8 +641,151 @@ where ever we are performing update operations {add/remove/Delete/Replace}, that
 non-synchronized area - This area is accessed by any no of threads simultaneously.
 Where ever object state won't be changed like read operations
 
+Example if one thread handling multiple object
+//to avoid both the thread execute simultaneously we need to mention synchronized
+
+class Display{
+    public synchronized void wish(String name){
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Good Mrng :");
+            try{
+                Thread.sleep(2000);
+            }catch (InterruptedException e){ }
+            System.out.print(name+"\n");
+        }
+    }
+}
+
+class MyThread extends Thread{
+    Display d;
+    String name;
+    MyThread(Display d, String name){
+        this.d=d;
+        this.name=name;
+    }
+    public void run(){
+        d.wish(name);
+    }
+}
+
+public class SynchronizedDemo {
+    public static void main(String[] args) {
+        Display d1 = new Display();
+        MyThread t1 = new MyThread(d1, "dhoni");
+        MyThread t2 = new MyThread(d1, "sachin");
+         t1.start();
+         t2.start();
+    }
+}
+Here the execution is in regular flow
+
+output -
+Good Mrng : dhoni
+Good Mrng : dhoni
+Good Mrng : dhoni
+Good Mrng : sachin
+Good Mrng : sachin
+Good Mrng : sachin
+
+Example 2 - If two object is handle by two different thread then synchronized keyword is not required.
+
+public class SynchronizedDemo {
+    public static void main(String[] args) {
+        Display d1 = new Display();
+        Display d2 = new Display();
+        MyThread t1 = new MyThread(d1, "dhoni");
+        MyThread t2 = new MyThread(d1, "sachin");
+         t1.start();//both the thread execute simultaneously
+         t2.start();
+    }
+}
+
+Even though wish method is synchronized we will get irregular out.
+because threads are operating on different java objects.
+conclusion - If multi threads are operating on same java object then synchronization is required.
+If multi threads are operating on multiple java object then synchronization is not required.
+
+Class level lock
+Every class in Java has a unique lock which is class level lock.
+If a thread wants to execute a static synchronized method, then thread required
+class level lock.
+Once thread got class level lock then it is allow to execute any static synchronized method of that class.
+
+Once method execution completes automatically thread releases the lock.
+-----------------
+
+class X {
+static sync m1();
+static sync m2();
+static m3();
+sync m4();
+m5();
+}
+
+While a thread executing static synchronized method the remaining thread are not allowed to execute,
+static synchronized method of that class simultaneously. But remaining threads are allowed to execute the following methods
+simultaneously -
+1. normal static methods
+2. sync instance methods
+3. normal instance methods
 
 
+------------------------
+
+Example
+
+package Thread.Synchronized;
+
+class DisplaySS{
+    public synchronized void wish(){
+        for (int i = 0; i < 10; i++) {
+            System.out.print(i);
+            try{
+                Thread.sleep(500);
+            }catch (InterruptedException e){ }
+        }
+    }
+
+    public synchronized void displayChar(){
+        for (int i = 65; i < 75; i++) {
+            System.out.print((char) i);
+            try{
+                Thread.sleep(500);
+            }catch (InterruptedException e){ }
+        }
+    }
+}
+
+class MyThreadSS extends Thread{
+    DisplaySS d;
+    MyThreadSS(DisplaySS d){
+        this.d=d;
+    }
+    public void run(){
+        d.wish();
+    }
+}
+
+class MyThreadSSc extends Thread{
+    DisplaySS d;
+    MyThreadSSc(DisplaySS d){
+        this.d=d;
+    }
+    public void run(){
+        d.displayChar();
+    }
+}
+
+public class StaticSyncDemo {
+    public static void main(String[] args) {
+        DisplaySS d = new DisplaySS();
+        MyThreadSS t1 = new MyThreadSS(d);
+        MyThreadSSc t2 = new MyThreadSSc(d);
+        t1.start();
+        t2.start();
+    }
+}
+output - 0123456789ABCDEFGHIJ
 
 
 6. InterThread communication
