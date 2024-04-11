@@ -1,6 +1,6 @@
-package Thread.Synchronized;
+package Thread.SynchronizedMethod;
 
-public class SynchronizedDemo {
+public class SynchronizedMethodDemo {
     public static void main(String[] args) {
         Display d1 = new Display();
         Display d2 = new Display();

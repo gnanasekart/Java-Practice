@@ -1,4 +1,4 @@
-package Thread.Synchronized;
+package Thread.SynchronizedMethod;
 
 class DisplaySS{
     public synchronized void wish(){
@@ -40,7 +40,7 @@ class MyThreadSSc extends Thread{
     }
 }
 
-public class StaticSyncDemo {
+public class StaticSynchronizedMethodDemo {
     public static void main(String[] args) {
         DisplaySS d = new DisplaySS();
         MyThreadSS t1 = new MyThreadSS(d);

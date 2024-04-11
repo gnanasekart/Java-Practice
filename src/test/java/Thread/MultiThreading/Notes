@@ -787,6 +787,209 @@ public class StaticSyncDemo {
 }
 output - 0123456789ABCDEFGHIJ
 
+--------------------------------------------------------------------
+Synchronised Block over Synchronised method
+If very few lines of the code required Synchronization then it is not recommended to declare entire method not as Synchronised.
+We have to enclose those few lines of the code by using Synchronised block.
+The main advantage of Synchronised block over Synchronised method is-
+It reduces waiting time of threads and improves performances of the system.
+
+case 1 - To get lock of current object-
+Synchronised(this) {
+----
+----
+----
+}
+this - if a thread got lock of current object then only it allowed to execute this area.
+
+case 2 - To get lock of particular object 'b'
+Synchronised(b) {
+----
+----
+----
+}
+b - if a thread got lock of particular class b object then only it allowed to execute this area.
+
+case 3 - To get class level lock
+
+Synchronised(Display.class) {
+----
+----
+----
+}
+Display.class - if a thread got class level lock of Display class, only it is allowed to execute this area.
+
+
+Example 1 - single display object for two thread
+
+public class SynchronizedBlockDemo {
+    public static void main(String[] args) {
+        Display d1 = new Display();
+        MyThreadSB t1 = new MyThreadSB(d1, "dhoni");
+        MyThreadSB t2 = new MyThreadSB(d1, "sachin");
+         t1.start();//both the thread execute simultaneously
+         t2.start();//output will be irregular flow
+    }
+}
+//In the below case only some part of code required to be maintained in synchronized block instead of entire method
+class Display{
+    public void wishSB(String name){
+        ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;//lakhs of lines of code
+
+        synchronized(this) {
+            for (int i = 0; i < 3; i++) {
+                System.out.print("Good Mrng :");
+                try{
+                    Thread.sleep(2000);
+                }catch (InterruptedException e){ }
+                System.out.print(name+"\n");
+            }
+        }
+
+        ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;//lakhs of lines of code
+    }
+}
+
+class MyThreadSB extends Thread{
+    Display d;
+    String name;
+    MyThreadSB(Display d, String name){
+        this.d=d;
+        this.name=name;
+    }
+    public void run(){
+        d.wishSB(name);
+    }
+}
+
+output -
+Good Mrng :dhoni
+Good Mrng :dhoni
+Good Mrng :dhoni
+Good Mrng :sachin
+Good Mrng :sachin
+Good Mrng :sachin
+
+Example 2 - two display object for two thread
+
+public class SynchronizedBlockDemo {
+    public static void main(String[] args) {
+        Display d1 = new Display();
+        Display d2 = new Display();
+        MyThreadSB t1 = new MyThreadSB(d1, "dhoni");
+        MyThreadSB t2 = new MyThreadSB(d1, "sachin");
+         t1.start();//both the thread execute simultaneously
+         t2.start();//output will be irregular flow
+    }
+}
+
+ir-regular output -
+
+Good Mrng :Good Mrng :dhoni
+Good Mrng :sachin
+Good Mrng :sachin
+Good Mrng :dhoni
+Good Mrng :sachin
+dhoni
+
+
+Example 3 - class level lock
+
+class DisplaySB{
+    public void wishSB(String name){
+        ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;//lakhs of lines of code
+
+        synchronized(DisplaySB.class) {
+            for (int i = 0; i < 3; i++) {
+                System.out.print("Good Mrng :");
+                try{
+                    Thread.sleep(2000);
+                }catch (InterruptedException e){ }
+                System.out.print(name+"\n");
+            }
+        }
+        ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;//lakhs of lines of code
+    }
+}
+
+output -
+Good Mrng :dhoni
+Good Mrng :dhoni
+Good Mrng :dhoni
+Good Mrng :sachin
+Good Mrng :sachin
+Good Mrng :sachin
+
+Example 4 - Primitive type variable block in not available
+lock concept applicable for object types and class but not for primitives, hence we cannot pass
+primitive as argument to synchronized block, otherwise we will get CE
+
+class DisplaySB{
+    public void wishSB(String name){
+        ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;//lakhs of lines of code
+        int x = 10;
+        synchronized(x) {
+            for (int i = 0; i < 3; i++) {
+                System.out.print("Good Mrng :");
+                try{
+                    Thread.sleep(2000);
+                }catch (InterruptedException e){ }
+                System.out.print(name+"\n");
+            }
+        }
+        ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;//lakhs of lines of code
+    }
+}
+
+output -
+java: unexpected type
+  required: reference
+  found:    int
+
+------------------------------------------------------------------
+
+Race Condition-
+If multiple thread operating simultaneously on the same object and causing data inconsistency.
+By using synchronized keyword we are resolving this race condition.
+
+Object lock - every object in java is unique lock that is object lock.
+when a thread want to execute instance synchronized method then that thread required object lock.
+
+class level lock - every class in java is unique lock. when a thread want to execute static synchronized method then that thread required class lock.
+
+While a thread executing synchronized method and given object is the remaining threads are allow to execute any other synchronized simultaneously on the same object ?
+No
+
+Is a thread can acquired multiple locks simultaneously ?
+Yes, from different objects
+
+class X {
+    public synchronized void m1() { //here thread has lock of X object
+    Y y = new Y();
+
+    synchronized(y) {//here thread has lock of x and y
+    Z z = new Z();
+        synchronized (z) {
+        -----//here thread has lock of x, y, z
+        }
+    }
+    }
+}
+
+
+class main{
+
+main() {
+X x = new X();
+x.m1();
+}
+}
+
+What is synchronized statement ?
+the statement present inside synchronized method or block.
+
+
+
 
 6. InterThread communication
 
