@@ -987,6 +987,71 @@ x.m1();
 
 What is synchronized statement ?
 the statement present inside synchronized method or block.
+--------------------------------------------------------------------------------
+
+wait(), notify(), notifyAll()
+
+- Two threads can communicate with each other by using wait, notify and notify all method.
+- That thread which is expecting update is responsible to call wait method, then immediately will enter into waiting state.
+- The thread which is responsible to perform update, after performing update it is responsible to call notify method, then waiting
+thread will get that notification and continue its execution with those updated items.
+
+
+- Above three methods present in Object class but not in the thread class.
+- Thread class contains only some specific methods like start(), join(), sleep(), etc.
+- But thread can call this method on any java object wait, notify, notifyAll.
+
+Three main points to consider while a thread accessing wait, notify, notifyAll
+
+1. If any thread want to call the wait method on any object, compulsory thread should be owner of that object
+2. Second that thread should has lock of that object.
+3. That thread should be in synchronized area
+If that thread not in any of the state means it will throws RE: IllegalMonitorStateException
+
+What happen if a thread calls wait() on any object ?
+If a thread calls wait method on any object, it will immediately release the lock of that particular object and
+entered into waiting state.
+
+What happen if a thread calls notify() on an object ?
+If a thread calls notify method on any object, it release the lock of that object but may not immediately.
+Except wait, notify and notifyAll there is no other method where thread release the lock.
+
+If a waiting thread got notify then which state it will go in thread life cycle?
+it will go to another waiting state to get lock.
+How it goes -
+- if waiting thread got notification
+- if time expired
+- if waiting thread got interrupted
+If waiting thread got lock it will move next to ready/runnable state.
+
+
+
+method ||  Is thread release lock ?
+yield()     no
+join()      no
+sleep()     no
+wait()      yes
+notify()    yes
+notifyAll() yes
+
+prototype-
+
+public final void wait() throws Interrupted exception;
+public final native void wait(long ms) throws Interrupted exception; - native method and wait for specific time only
+public final void wait (long ms, int ms) throws Interrupted exception; - non native method
+
+public final native void notify();
+public final native void notifyAll();
+
+
+
+
+
+
+
+
+
+
 
 
 
