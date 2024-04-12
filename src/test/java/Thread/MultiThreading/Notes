@@ -1044,15 +1044,120 @@ public final native void notify();
 public final native void notifyAll();
 
 
+Example 1
+
+public class ThreadWait {
+    public static void main(String[] args) throws InterruptedException {
+      Threadloop t = new Threadloop();
+      t.start();
+      t.wait();
+      System.out.println(t.total);
+    }
+}
+
+class Threadloop extends Thread {
+    int total=0;
+    public void run() {
+        for (int i = 0; i <= 100; i++) {
+            total+=i;
+        }
+        this.notify();
+    }
+}
+
+output - Exception in thread "main" java.lang.IllegalMonitorStateException: current thread is not owner
+
+Example 2
+public class ThreadWait {
+
+    public static void main(String[] args) throws InterruptedException {
+      Threadloop t = new Threadloop();
+      t.start();
+      synchronized (t){
+          t.wait();
+      }
+      System.out.println(t.total);
+    }
+}
+
+class Threadloop extends Thread {
+    int total=0;
+    public void run() {
+        for (int i = 0; i <= 100; i++) {
+            total+=i;
+        }
+        this.notify();
+    }
+}
+
+output -
+Exception in thread "Thread-0" java.lang.IllegalMonitorStateException: current thread is not owner
+	at java.base/java.lang.Object.notify(Native Method)
+	at Thread.Wait_Notify_NotifyAll.Threadloop.run(ThreadWait.java:22)
+5050
+
+Example 3
+
+public class ThreadWait {
+
+    public static void main(String[] args) throws InterruptedException {
+        Threadloop t = new Threadloop();
+        t.start();
+        synchronized (t) {
+            t.wait();
+        }
+        System.out.println(t.total);
+    }
+}
+
+class Threadloop extends Thread {
+    int total = 0;
+
+    public void run() {
+        synchronized (this) {
+            for (int i = 0; i <= 100; i++) {
+                total += i;
+            }
+            this.notify();
+        }
+    }
+}
+
+output - 5050
+
+Difference between notify() and notifyAll()
+
+we can use notify method to give the notification for only one waiting thread.
+If multiple threads are waiting then only one thread will be notify and the remaining thread have to wait for further notification.
+Which thread will be notify we cannot expect it depends on JVM.
 
 
+If there are two Objects which contains more no of waiting threads
+
+obj1.wait(); => 60 threads waiting
+obj2.wait(); => 40 threads waiting
+
+obj1.notifyAll() -> it will notify all the waiting thread of particular objects.
 
 
+On which object we are calling wait method thread required lock of that particular object.
+If we are calling wait method on s1 then we have to get lock of s1 object, but not on s2 object.
 
+Stack s1 = new Stack();
+Stack s2 = new Stack();
 
+Synchronized(s1) {
 
+s2.wait();
 
+}
+RE: IllegalMonitorStateException
+-----------------------------------
+Synchronized(s1) {
 
+s1.wait();
+
+}
 
 
 
