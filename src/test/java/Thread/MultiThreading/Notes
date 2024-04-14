@@ -988,7 +988,7 @@ x.m1();
 What is synchronized statement ?
 the statement present inside synchronized method or block.
 --------------------------------------------------------------------------------
-
+Thread inner Communication
 wait(), notify(), notifyAll()
 
 - Two threads can communicate with each other by using wait, notify and notify all method.
@@ -1159,14 +1159,88 @@ s1.wait();
 
 }
 
-
-
-6. InterThread communication
+------------------------------------------------
 
 7. Deadlock
+If two threads are waiting for each other for ever such type of infinite waiting is called deadlock.
+Synchronized keyword is the only reason for deadlock situation, Hence while using Synchronized keyword we have to take special care.
+there are no resolution technics but several prevention technics are available.
 
+public class DeadLock extends Thread {
+    A a = new A();
+    B b = new B();
+
+    public void m1(){
+        this.start();
+        a.d1(b);//execute by main thread
+    }
+
+    public void run(){
+        b.d2(a);//execute by child thread
+    }
+
+    public static void main(String[] args) {
+        DeadLock t = new DeadLock();
+        t.m1();//call normal m1 method
+    }
+}
+
+class A{
+    public synchronized void d1(B b){
+        System.out.println("d1 method");
+        try{
+            Thread.sleep(2000);
+        }catch (InterruptedException e){ }
+        System.out.println("b last method");
+        b.last();
+    }
+
+    public synchronized void last(){
+        System.out.println("inside A last method");
+    }
+}
+
+
+class B{
+    public synchronized void d2(A a){
+        System.out.println("d2 method");
+        try{
+            Thread.sleep(2000);
+        }catch (InterruptedException e){ }
+        System.out.println("a last method");
+        a.last();
+    }
+
+    public synchronized void last(){
+        System.out.println("inside B last method");
+    }
+}
+
+output -
+d1 method
+d2 method
+b last method
+a last method
+
+both thread still running
+
+In the above program if we remove at least one synchronized keyword then the program won't enter into deadlock.
+Hence synchronized keyword is the only reason for dead lock situation.
+---------------------------
+
+Deadlock vs Starvation
+
+Deadlock - A long waiting of a thread where waiting never ends
+Starvation - A long waiting of a thread where waiting ends at certain point,
+low priority thread has to wait until completing all high priority threads.
+It may be long waiting but ends at certain point.
+
+
+-----------------------------
 8. Demon Threads
 
+
+-----------------------------
 9. Multithreading enhancement
 
 
