@@ -1310,4 +1310,26 @@ If we are not commenting this line, main thread is non daemon and child thread d
 -----------------------------
 9. Multithreading enhancement
 
+Java implemented multithreading by two model
+Green Thread model - the thread is only managed by JVM without any support from OS. Ex- Sun Solaris OS (deprecated)
+Native OS madel - the thread lifecycle managed by JVM with the help of OS (windows)
+
+------------------------
+How to stop a thread - We can stop a thread execution by using stop() of thread class.
+
+public void stop();
+If we call stop method then immediately the thread will enter into dead state.
+Any way stop method is deprecated and not recommended to use.
+
+--------------------------------
+How to suspend and resume of a thread ?
+
+we can suspend method of thread class, then immediately that thread entered into suspended state.
+public void suspend() => t.suspend();
+we can resume a suspended thread by using resume method of thread class, then suspended class can continue its execution.
+public void resume() => t.resume();
+
+these methods are deprecated not recommend to use.
+
+-------------------------------
 
