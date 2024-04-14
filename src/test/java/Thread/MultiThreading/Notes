@@ -1237,8 +1237,75 @@ It may be long waiting but ends at certain point.
 
 
 -----------------------------
-8. Demon Threads
+8. Daemon Threads
+The threads which are executing in background like
+1. Garbage Collector
+2. Signal Dispatcher
+3. Attach listener
 
+The main objective of Demon thread to provide support for non Demon threads- Main Thread.
+For example If main thread runs with low memory JVM runs garbage collector. To destroyed useless object.
+No of bytes of free memory got improved. With this free memory main thread can improved.
+
+Usually demon threads having low priority but based on our required demon threads can run with high priority also.
+1. we can check daemon nature of a thread by using isDaemon of thread class
+public boolean isDaemon()
+
+2. we can change the daemon nature of the thread by using setDaemon method.
+but changing daemon nature is possible before stating of a thread only.
+After starting a thread if we are trying to change the daemon nature we will get Runtime Exception - IllegalThreadStateException
+public void setDaemon(boolean b)
+
+------------------------------
+Default nature of thread:-
+ByDefault main thread is always non-Daemon and for all remaining thread daemon nature will be inherited from parent to child.
+Then automatically child thread is also daemon.
+
+And if the parent thread is non daemon then automatically child thread is also non daemon.
+
+Note - It is impossible to change daemon nature of main thread because it is already started by JVM at beginning.
+
+public static void main(String[] args) {
+        System.out.println(Thread.currentThread().isDaemon());//false
+        //Thread.currentThread().setDaemon(true);//RE: IllegalThreadStateException
+
+        MyThread t = new MyThread();
+        System.out.println(t.isDaemon());//false
+
+        t.setDaemon(true);//can set because still it does not set.
+        System.out.println(t.isDaemon());//true
+    }
+
+Whenever last non daemon thread terminates automatically all daemon threads will be terminated. irrespective of their position.
+
+public class DaemonThreadDemo {
+
+    public static void main(String[] args) {
+        MyThreadDaemon d = new MyThreadDaemon();
+        d.setDaemon(true);
+        d.start();
+        System.out.println("End of main thread");
+    }
+}
+
+class MyThreadDaemon extends Thread {
+    public void run() {
+        for (int i = 0; i < 10; i++) {
+            System.out.println("child thread");
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+}
+output -
+End of main thread
+child thread
+
+d.setDaemon(true); -Commenting this line Both main and child thread are non daemon and both the threads will be executed until their completion.
+If we are not commenting this line, main thread is non daemon and child thread daemon hence whenever main thread terminated automatically child thread will be terminated.
 
 -----------------------------
 9. Multithreading enhancement

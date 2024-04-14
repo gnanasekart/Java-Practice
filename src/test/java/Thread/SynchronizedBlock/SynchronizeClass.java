@@ -1,4 +1,4 @@
-package Thread;
+package Thread.SynchronizedBlock;
 
 public class SynchronizeClass {
 
